@@ -1,5 +1,4 @@
 // ButterFly Pattern
-
 import java.util.*;
 public class Main
 {
@@ -8,34 +7,32 @@ public class Main
 	   
 	    Scanner in = new Scanner(System.in);
 	    int n=in.nextInt();
-	    int star=2;
-	    int pstar=1;
 	    for(int i=1;i<=n;i++) {
 	       
-	       for(int j=1;j<=pstar;j++) {
+	       for(int j=1;j<=i;j++) {
 	            System.out.print("*");
 	        }
-	        for(int j=1;j<=((n*2)-(pstar*2));j++) {
+	        for(int j=1;j<=((2*n)-(2*i));j++) {
 	            System.out.print(" ");
 	        }
-	        for(int j=1;j<=pstar;j++) {
+	        for(int j=1;j<=i;j++) {
 	            System.out.print("*");
 	        }
-	        pstar++;
+	       
 	        System.out.println();
 	    }
-	    pstar=n;
-	     for(int i=1;i<=n;i++) {
-	       for(int j=1;j<=pstar;j++) {
+	    
+	     for(int i=n;i>=1;i--) {
+	       for(int j=1;j<=i;j++) {
 	            System.out.print("*");
 	        }
-	        for(int j=1;j<=((n*2)-(pstar*2));j++) {
+	        for(int j=1;j<=((2*n)-(2*i));j++) {
 	            System.out.print(" ");
 	        }
-	        for(int j=1;j<=pstar;j++) {
+	        for(int j=1;j<=i;j++) {
 	            System.out.print("*");
 	        }
-	        pstar--;
+	      
 	        System.out.println();
 	    }
 	    
